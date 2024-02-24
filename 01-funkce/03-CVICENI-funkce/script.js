@@ -6,15 +6,24 @@ Jste na speed datingu a hledáte ❤ na celý život. Víte, že za celý večer
 S takovým představením je láska je zaručena.
 */
 
+function predstaveni(jmeno, vek, mesto, konicek){
+    console.log(`Ahoj jsem ${jmeno}, je mi ${vek}, narodila jsem se ve městě ${mesto} a mám ráda ${konicek}.`);
+}
 
-
+predstaveni('Jana', 50, 'Kutná Hora', 'programování');
+predstaveni('Hanka', 48, 'Brno', 'vaření');
+predstaveni('Edita', 52, 'Olomouc', 'bruslení');
 
 /*
 Cvičení 2: Obsah trojúhelníka
 Napište funkci `obsahTrojuhelnika`, která jako parametry přijme strany `a` a `b` pravoúhlého trojúhelníka. Funkce jako výsledek vrátí jeho obsah. Obsah spočítáme jako `(a * b) / 2`.
 */
-
-
+function ObsahTrojuhelniku(StranaA, StranaB){
+    console.log((StranaA * StranaB) / 2)
+}
+ObsahTrojuhelniku(20, 40)
+ObsahTrojuhelniku(120, 150)
+ObsahTrojuhelniku(80, 140)
 
 
 /*
