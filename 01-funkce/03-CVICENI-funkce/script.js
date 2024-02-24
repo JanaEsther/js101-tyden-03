@@ -35,6 +35,20 @@ Např. při zavolání `max2(7, 13)` funkce vrátí hodnotu `13`. Volání  `max
 Pro účely příkladu předstírejme, že nevíme, že v JavaScriptu už existuje funkce `Math.max`, která dělá to samé. Naprogramujte vlastní funkci, která porovná dvě čísla a vrátí to větší z nich.
 */
 
+function max2(number1, number2){
+    if (number1 > number2){
+        console.log(number1);
+    } else {
+        console.log(number2);
+    }
+} 
+
+max2(25, 5)
+max2(1200, 25000)
+
+function max3(a, b){
+	return a > b ? a : b;
+}
 
 
 
@@ -43,3 +57,20 @@ Cvičení 4: Přestupný rok
 Napište funkci, která jako parametr přijme `rok` a vrátí `true` nebo `false` podle toho, zda je zadaný rok přestupný.
 Přestupný rok je dělitelný číslem `4`. Roky dělitelné číslem `100` jsou ale přestupné jen tehdy, pokud jsou zároveň dělitelné číslem `400`.
 */
+
+function PrestupnyRok(rok){
+if (rok % 4 === 0 && rok % 100 !==0 || rok % 400){
+console.log (true);
+} else{
+    console.log(false);
+    }
+}
+
+PrestupnyRok(prompt('Zadej rok:\n'))
+
+function jePrestupnyRok(rok) {
+	if (rok % 4 === 0 && (rok % 100 !== 0 || rok % 400 === 0)) {
+		return true
+	}
+	return false;
+}
