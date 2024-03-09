@@ -35,7 +35,7 @@ const mojeFunkce2 = () => {
 }
 */
 
-// výjimka - object literal není blok kódu
+// výjimka - object literal není blok kódu, pouze vlasnosti s hodnotami
 /*
 const osoba = {
 	jmeno: 'Alena',
@@ -45,7 +45,7 @@ const osoba = {
 
 
 // obory platnosti - scope
-// global scope - globální
+// global scope - globální - přístup odkudkoliv z programu
 /*
 const cislo = 1;
 
@@ -66,12 +66,13 @@ const jinaFunkce = () => {
 jinaFunkce()
 */
 
-// function scope - ve funkci
+
+// function scope - obor platnosti funkce
 /*
 const globalniPromenna = 'globalni';
 
 const mojeFunkce = () => {
-	const lokalniPromenna = 'lokalni';
+	const lokalniPromenna = 'lokalni'; existuje pouze uvnitř bloku funkce
 
 	console.log(globalniPromenna);
 	console.log(lokalniPromenna);
@@ -98,7 +99,9 @@ console.log(a); // chyba
 // jsou lokální pro tento blok, ať je to
 // uvnitř podmínky, cyklu, samostatného bloku
 /*
-{
+
+const vek = 19;
+if (vek > 18{
  	const napoj = 'pivo';
  	console.log(napoj);
 }

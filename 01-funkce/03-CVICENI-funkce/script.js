@@ -74,3 +74,10 @@ function jePrestupnyRok(rok) {
 	}
 	return false;
 }
+
+
+
+
+
+
+
