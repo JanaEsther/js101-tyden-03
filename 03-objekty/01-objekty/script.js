@@ -10,8 +10,8 @@ const adresa = 'Dvorská 6, Městečko nad Řekou, 199 37';
 const svobodna = true;
 
 
-// objekt a jeho vlastnosti
-// object literal
+//  jedna proměnná, která obsahuje objekt a ten má vlastnosti
+// object literal - definice objektu
 const osoba = {
 	jmeno: 'Alena',
 	prijmeni: 'Nováková',
@@ -30,6 +30,10 @@ const osoba = {
 // tečková notace
 osoba.jmeno = 'Jana';
 console.log( osoba.jmeno );
+console.log(osoba.jmeno);
+console.log(osoba.prijmeni);
+console.log(osoba.email);
+console.log(osoba);
 
 
 // závorková notace
