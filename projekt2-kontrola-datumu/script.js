@@ -57,8 +57,6 @@ if (den < 1 || den > dnyVMesici) {
 }
 
 
-
-
 console.log( jeValidniDatum('15.06.2023') );  // mělo by být true
 
 // špatná data

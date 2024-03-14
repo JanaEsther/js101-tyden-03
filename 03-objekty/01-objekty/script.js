@@ -50,7 +50,7 @@ console.log( osoba['prijmeni'] );
 
 
 
-// závorková otace umožňuje mít
+// závorková notace umožňuje mít
 // název vlastnosti uložený v proměnné
 const vlastnost = 'jmeno';
 console.log( osoba[vlastnost] );
@@ -59,8 +59,8 @@ console.log( osoba[vlastnost] );
 // vnořené objekty
 console.log(osoba.adresa.ulice);
 console.log( osoba.adresa.mesto );
+console.log(osoba['adresa']['ulice'])
 console.log( osoba['adresa']['mesto'] );
-
 
 // přidávání vlastností
 // prostě vlastnost nastavíme

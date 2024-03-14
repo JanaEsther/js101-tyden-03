@@ -3,15 +3,15 @@ console.log('%c Metody objektů ', 'background:black;color:yellow;');
 // Metoda je funkce uvnitř objektu.
 
 // Metody, které už známe a používáme
-// console.log('ahoj');
-// console.log( Math.PI  );
-// console.log( Math.round(1.76)  );
+console.log('ahoj');
+console.log( Math.PI  );
+console.log( Math.round(1.76));
 
 
 
 // metody v našich vlastních objektech
-/*
-const pes = {
+
+const pes1 = {
 	jmeno: 'Alík',
 	barva: 'hnědá',
 
@@ -32,10 +32,10 @@ const pes = {
 
 };
 
-pes.stekej();
-pes.hafej();
-pes.vrtOcasem(3);
-*/
+pes1.stekej();
+pes1.hafej();
+pes1.vrtOcasem(10);
+
 
 
 
@@ -47,15 +47,15 @@ const pes = {
 	barva: 'hnědá',
 
 	stekej: function() {
-		console.log('stek stek, ja jsem ' + this.jmeno )
+		console.log('stek stek, ja jsem ' + this.jmeno )//this odkazuje na objekt uvnitř kterého jsem
 	},
 
-	hafej: () => {
+/*	hafej: () => {
 		console.log('haf haf, ja jsem ' + this.jmeno )
-	},
+	},*/
 
 
 };
 
-pes.stekej();
-pes.hafej();
+pes1.stekej();
+//pes.hafej();
