@@ -2,10 +2,10 @@
 /*## Cvičení 1: Oblíbený film
 
 Vytvořte objekt `oblibenyFilm`, který bude mít vlastnosti `nazev`, `rokVydani`, 
-`zanr`, a `reziser`. Objekt naplňte hodnotami vašeho oblíbeného filmu.*/ 
+`zanr`, a `reziser`. Objekt naplňte hodnotami vašeho oblíbeného filmu.*/
 
 const oblibenyFilm = {
-	nazev: 'Body ofmy enemy',
+	nazev: 'Body of my enemy',
 	rokV: 1976,
 	zanr:'drama',
 	reziser: 'Henri Verneuil',
@@ -20,7 +20,7 @@ Adresa domů je jiná, než adresa do práce, a to stejné může platit pro tel
 
 - Vytvořte objekt `kontakt`, který bude obsahovat vlastnosti `jmeno`, `prijmeni`, `datumNarozeni` a vlastnosti `domov` a `zamestnani`.
 - `domov` je vnořený objekt, který obsahuje vlastnosti `adresa`, `telefon` a `email`. Adresa je znovu vnořený objekt, který obsahuje `ulice`, `cislo`, `mesto` a `psc`.
-- `zamestnani` je vnořený objekt, který obsahuje vlastnosti `firma`, `pozice`, `adresa`, `telefon` a `email`. Adresa je znovu objekt, jako u domácí adresy.*/ 
+- `zamestnani` je vnořený objekt, který obsahuje vlastnosti `firma`, `pozice`, `adresa`, `telefon` a `email`. Adresa je znovu objekt, jako u domácí adresy.*/
 
 const Kontakt = {
 	jmeno: 'Jana',
@@ -79,6 +79,46 @@ const weather = {
 	cod: 200
   }
 
-  console.log(weather.city)
-  console.log(weather.type.city)
-  console.log(weather.description.city)
+console.log(weather.city)
+console.log(weather.weather.type)
+console.log(weather.weather.description)
+console.log(weather.weather.main.temp)
+console.log(weather.weather.main.temp_max)
+console.log(weather.weather.rain.hour)
+
+/*## Cvičení 4: Bankovní účet
+
+Vytvořte objekt `bankovniUcet`, který bude mít:
+
+- vlastnost `zustatek` (v ní bude, kolik máme na účtu peněz)
+- metodu `vybrat()`, která bude jako parametr přijímat částku, kterou chceme vybrat. Tato částka se při zavolání metody **odečte** z aktuálního zůstatku.
+- metodu `vlozit()`, která bude jako  parametr přijímat částku, kterou chceme na účet vložit. Tato částka se při zavolání metody **přičte** k aktuálnímu zůstatku.
+
+Pro přístup k zůstatku uvnitř metod použijte `this`.
+
+### Bonus:
+
+Do metody pro výběr přidejte podmínku, aby nešlo vybrat více peněz než na účtu je. Pokud se pokusíme vybrat více peněz, do konzole se napíše `Na účtu nemáte dostatek prostředků` a výběr se neprovede (peníze se neodečtou).*/
+
+let bankovniUcet;
+
+bankovniUcet = {
+	zustatek: 5_000_000,
+
+	vybrat: function(castka){
+		if (castka <= this.zustatek){
+			console.log( this.zustatek -= castka)
+		} else{
+			console.log('Na účtu nemáte dostatek prostředků')
+		}
+
+	}, 
+	vlozit: function(castka){
+		console.log( this.zustatek +=castka)
+
+	}
+
+};
+
+bankovniUcet.vybrat(5000);
+bankovniUcet.vlozit(20000);
