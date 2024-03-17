@@ -76,7 +76,6 @@ console.log(osoba.kamaradi)
 const hraciPlocha = [
 	['x', ' ', 'o'],
 	[' ', 'x', 'o'],
-	[' ', ' ', 'x'],
 	['o', ' ', 'x'],
 ];
 

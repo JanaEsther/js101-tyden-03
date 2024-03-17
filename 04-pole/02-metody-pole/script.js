@@ -98,7 +98,7 @@ const jmeno1 = 'Herbert';
 
 const pozice1 = jmena.indexOf(jmeno1); 
 if (pozice1 === -1){
-	console.log(`Hodnota ${jmeno1} nebyla nalezena`);
+	console.log((`Hodnota ${jmeno1} nebyla nalezena`));
 } else {
 	console.log(`${jmeno1} je v poli na indexu ${pozice1}`);
 }
