@@ -58,7 +58,7 @@ const firma = {
 	{ jmeno: 'Jiří', prijmeni: 'Rulf', pozice:'servisní technik' },
 	],
 	}
-	console.log(firma.zamestnanci[2].prijmeni, firma.zamestnanci[2].pozice );
+	console.log(firma.zamestnanci[2].jmeno,firma.zamestnanci[2].prijmeni, firma.zamestnanci[2].pozice );
 
 
 
